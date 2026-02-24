@@ -10,7 +10,7 @@ export function RegisterSection() {
     <section id="register" className="bg-[#faf7f2] px-6 py-20">
       <div className="mx-auto max-w-5xl">
         <div className="mb-12 text-center">
-          <p className="mb-2 text-xs font-medium tracking-widest text-[#f0a050] uppercase">
+          <p className="mb-2 text-md font-medium tracking-widest text-[#f0a050] uppercase">
             Бүртгэл
           </p>
           <h2 className="font-serif text-3xl font-bold text-[#1a0a05] md:text-4xl text-balance">
@@ -64,7 +64,7 @@ export function RegisterSection() {
                       type="tel"
                       required
                       className="w-full rounded-xl border border-[#1a0a05]/10 bg-white px-4 py-3 text-sm text-[#1a0a05] outline-none transition-all focus:border-[#f0a050] focus:ring-2 focus:ring-[#f0a050]/20"
-                      placeholder="9911 1234"
+                      placeholder=" 8888 1234"
                     />
                   </div>
                 </div>
@@ -93,7 +93,8 @@ export function RegisterSection() {
                     <option value="2">2 хүн</option>
                     <option value="3">3 хүн</option>
                     <option value="4">4 хүн</option>
-                    <option value="5+">5+ хүн</option>
+                    <option value="5">5 хүн</option>
+                    <option value="6+">6+ хүн</option>
                   </select>
                 </div>
 
@@ -131,8 +132,8 @@ export function RegisterSection() {
                 </div>
                 <div>
                   <p className="text-xs font-medium text-[#1a0a05]/50">Утас</p>
-                  <p className="text-sm font-semibold text-[#1a0a05]">+976 9911 1234</p>
-                  <p className="text-sm font-semibold text-[#1a0a05]">+976 8811 5678</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">+976 8863-1230</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">+081 070-2166-8821</p>
                 </div>
               </div>
 
@@ -142,11 +143,11 @@ export function RegisterSection() {
                 </div>
                 <div>
                   <p className="text-xs font-medium text-[#1a0a05]/50">И-мэйл</p>
-                  <p className="text-sm font-semibold text-[#1a0a05]">info@japantour.mn</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">jargalariuka9@gmail.com</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
+              {/* <div className="flex items-start gap-3">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f0a050]/10">
                   <MapPin className="h-4 w-4 text-[#f0a050]" />
                 </div>
@@ -155,7 +156,7 @@ export function RegisterSection() {
                   <p className="text-sm font-semibold text-[#1a0a05]">Улаанбаатар хот</p>
                   <p className="text-xs text-[#1a0a05]/50">Сүхбаатар дүүрэг</p>
                 </div>
-              </div>
+              </div> */}
 
               <div className="h-px bg-[#1a0a05]/5" />
 

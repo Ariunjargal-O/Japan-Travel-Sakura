@@ -24,7 +24,7 @@ const itinerary = [
       "Буудалдаа байрлаж, орчимд хооллож, амраарай. Jet lag-аас сэргийлж эрт унтахыг зөвлөе.",
     spots: [
       { name: "Narita International Airport", description: "Японы хамгийн том олон улсын нисэх буудал" },
-      { name: "Narita Express / Limousine Bus", description: "Токио хот руу хурдан тээвэрлэлт" },
+      { name: "Narita Express /", description: "Токио хот руу хурдан тээвэрлэлт" },
       { name: "Буудалд байрлах", description: "Амрах, орчимд хооллох, чөлөөт цаг" },
     ],
     layout: "left" as const,
@@ -35,7 +35,7 @@ const itinerary = [
     dayLabel: "2-р өдөр",
     title: "Одайба бүс",
     subtitle:
-      "Далайн эргийн орчинд тайван алхах, шоппинг, аквариум. Одайба бүс нь Токиогийн булангийн далайд байрлах хиймэл арал юм.",
+      "Далайн эргийн орчинд тайван алхах, шоппинг, аквариум. Одайба бүс нь Токиогийн булангийн далайд байрлах хүний гараар бүтээгдсэн хиймэл арал юм.",
     imageSrc: "/images/day2-odaiba.jpg",
     imageAlt: "Одайба Rainbow Bridge",
     highlight:
@@ -53,7 +53,7 @@ const itinerary = [
   {
     id: "day-3",
     dayLabel: "3-р өдөр",
-    title: "Уэно + Асакуса + Скайтри",
+    title: "Үэно + Асакуса + Тэнгэрийн мод",
     subtitle:
       "Уламжлалт Японы соёл, амьтны хүрээлэн, хотын панорама. Уэно амьтны хүрээлэнгээс эхлэн хаврын улиралд сакура цэцгийг үзнэ.",
     imageSrc: "/images/day3-asakusa.jpg",
@@ -93,18 +93,18 @@ const itinerary = [
   {
     id: "day-5",
     dayLabel: "5-р өдөр",
-    title: "Шибуя",
+    title: "Шибүяa",
     subtitle:
-      "Токиогийн хамгийн амьд, дэлхийд алдартай бүс нутаг. teamLab Planets-д бүх мэдрэхүйгээр урлагийг мэдрэнэ.",
+      "Токиогийн хамгийн амьд, дэлхийд алдартай бүс нутаг. TeamLab Planets-д бүх мэдрэхүйгээр урлагийг мэдрэнэ.",
     imageSrc: "/images/day5-shibuya.jpg",
-    imageAlt: "Шибуя Кроссинг шөнийн гэрэлд",
+    imageAlt: "Шибүяa Кроссинг шөнийн гэрэлд",
     highlight:
       "Хачикогийн хөшөөнд зогсож, дэлхийн хамгийн олон хүн нэгэн зэрэг гарам дээр алхаж, Шибуягийн шоппинг хийгээрэй. Оройн хотын хамгийн амьд уур амьсгалыг мэдрэх боломжтой.",
     spots: [
-      { name: "teamLab Planets", description: "Бүх мэдрэхүйн дижитал урлагийн үзэсгэлэн" },
+      { name: "TeamLab Planets", description: "Бүх мэдрэхүйн дижитал урлагийн үзэсгэлэн" },
       { name: "Hachiko Memorial Statue", description: "Үнэнч нохойн дурсгалт хөшөө" },
       { name: "Shibuya Crossing", description: "Дэлхийн хамгийн олон хүн гардаг зам" },
-      { name: "Шибуя бүсийн шоппинг", description: "Хувцас, электроник, Японы брэнд" },
+      { name: "Шибүяа бүсийн шоппинг", description: "Хувцас, электроник, Японы брэнд" },
     ],
     layout: "left" as const,
     accentColor: "#e91e8a",
@@ -112,9 +112,9 @@ const itinerary = [
   {
     id: "day-6",
     dayLabel: "6-р өдөр",
-    title: "Чөлөөт өдөр",
+    title: "Чөлөөт өдөр", 
     subtitle:
-      "Аялагч өөрийн сонирхлоор сонгоно. Токио Диснейлэнд, DisneySea, Харри Поттерын Warner Bros. Studio Tour, эсвэл Накамэгуро.",
+      "Аялагч өөрийн сонирхлоор сонгож амрах боломжтой. Үзвэр үйлчилгээний үнэд багтаагүй. Токио Диснейлэнд, DisneySea, Харри Поттерын Warner Bros. Studio Tour, эсвэл Накамэгуро гудамаар сакура үзэх.",
     imageSrc: "/images/day6-disneyland.jpg",
     imageAlt: "Токио Диснейлэнд",
     highlight:

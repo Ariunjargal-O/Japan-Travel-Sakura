@@ -27,11 +27,12 @@ export function HeroSection() {
         </h1>
         <h2 className="mb-6 font-serif text-5xl font-bold text-[#f0a050] md:text-7xl lg:text-8xl">
           Япон Аялал
+          
         </h2>
 
         <div className="mb-8 flex items-center gap-3">
           <span className="h-px w-12 bg-[#f0a050]/50" />
-          <span className="text-sm text-[#f0a050]">2025</span>
+          <span className="text-2xl text-[#f0a050]">2026</span>
           <span className="h-px w-12 bg-[#f0a050]/50" />
         </div>
 

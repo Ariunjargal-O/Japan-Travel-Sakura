@@ -18,23 +18,24 @@ export function PricingSection() {
             Аяллын үнэ
           </p>
           <h2 className="font-serif text-3xl font-bold text-white md:text-4xl text-balance">
-            Аяллын багц
+            7 Өдрийн aяллын багц
           </h2>
         </div>
 
         <div className="mx-auto max-w-lg overflow-hidden rounded-3xl border border-white/10 bg-white/5 backdrop-blur-md">
           {/* Header */}
           <div className="bg-gradient-to-r from-[#f0a050] to-[#e88a30] p-8 text-center">
-            <h3 className="mb-1 text-lg font-bold text-[#1a0a05]">7 Өдрийн Багц</h3>
-            <p className="text-xs text-[#1a0a05]/70">Бүрэн хөтөлбөр + чөлөөт өдөр</p>
+            {/* <h3 className="mb-1 text-3xl font-bold text-[#1a0a05]">7 Өдрийн Багц</h3> */}
+            <p className="text-2xl text-[#1a0a05]/70">Бүрэн хөтөлбөр + 1чөлөөт өдөр</p>
             <div className="mt-4 flex items-baseline justify-center gap-1">
-              <span className="font-serif text-5xl font-bold text-[#1a0a05]">......₮</span>
+              <span className="font-serif text-5xl font-bold text-[#1a0a05]">4,500,000₮</span>
             </div>
             <div className="mt-2 flex items-center justify-center gap-2">
-              <Plane className="h-4 w-4 text-[#1a0a05]/60" />
-              <span className="text-sm font-medium text-[#1a0a05]/70">
+              
+              <span className="text-2xl font-medium text-[#1a0a05]/70 flex items-center"> 
                 + Нислэгийн тийз
               </span>
+              <Plane className="h-7 w-7 text-[#1a0a05]/60" />
             </div>
           </div>
 
