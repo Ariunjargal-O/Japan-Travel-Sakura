@@ -150,9 +150,53 @@ export function RegisterSection() {
             )}
           </div>
 
-          {/* Contact info - өөрчлөгдөөгүй хэвээр */}
+         <div className="md:col-span-2">
+            <div className="space-y-6 rounded-2xl border border-[#1a0a05]/5 bg-white p-6">
+              <h3 className="text-sm font-bold text-[#1a0a05]">Холбоо барих</h3>
+
+              <div className="flex items-start gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#3498db]/10">
+                  <Phone className="h-4 w-4 text-[#3498db]" />
+                </div>
+                <div>
+                  <p className="text-xs font-medium text-[#1a0a05]/50">Утас</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">+976 9811-1230</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">+976 7211-9871</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">+081 070-2166-8821</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#2ecc71]/10">
+                  <Mail className="h-4 w-4 text-[#2ecc71]" />
+                </div>
+                <div>
+                  <p className="text-xs font-medium text-[#1a0a05]/50">И-мэйл</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">ariunjargal.ochirpurev@gmail.com</p>
+                </div>
+              </div>
+
+              {/* <div className="flex items-start gap-3">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f0a050]/10">
+                  <MapPin className="h-4 w-4 text-[#f0a050]" />
+                </div>
+                <div>
+                  <p className="text-xs font-medium text-[#1a0a05]/50">Хаяг</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">Улаанбаатар хот</p>
+                  <p className="text-xs text-[#1a0a05]/50">Сүхбаатар дүүрэг</p>
+                </div>
+              </div> */}
+
+              <div className="h-px bg-[#1a0a05]/5" />
+
+              <p className="text-xs leading-relaxed text-[#1a0a05]/40">
+                Ажлын өдрүүдэд 09:00 - 18:00 цагийн хооронд холбогдоно уу. Бид таны аяллыг тав тухтай болгохын тулд бүх талаар туслах болно.
+              </p>
+            </div>
+          </div>
           {/* ... */}
         </div>
+        
       </div>
     </section>
   )
