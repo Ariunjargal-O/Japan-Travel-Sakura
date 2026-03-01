@@ -17,11 +17,12 @@ export function RegisterSection() {
 
     try {
       await emailjs.sendForm(
-        "service_bgrkysy",
-        "sak-travel1",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         formRef.current!,
-        "bSpzquXzX4SGtOIkp"
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
       );
+
       setSubmitted(true);
     } catch (err) {
       console.error(err);
@@ -175,9 +176,15 @@ export function RegisterSection() {
                 </div>
                 <div>
                   <p className="text-xs font-medium text-[#1a0a05]/50">Утас</p>
-                  <p className="text-sm font-semibold text-[#1a0a05]">+976 9811-1230</p>
-                  <p className="text-sm font-semibold text-[#1a0a05]">+976 7211-9871</p>
-                  <p className="text-sm font-semibold text-[#1a0a05]">+081 070-2166-8821</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">
+                    +976 9811-1230
+                  </p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">
+                    +976 7211-9871
+                  </p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">
+                    +081 070-2166-8821
+                  </p>
                 </div>
               </div>
 
@@ -186,7 +193,9 @@ export function RegisterSection() {
                   <Mail className="h-4 w-4 text-[#2ecc71]" />
                 </div>
                 <div>
-                  <p className="text-xs font-medium text-[#1a0a05]/50">И-мэйл</p>
+                  <p className="text-xs font-medium text-[#1a0a05]/50">
+                    И-мэйл
+                  </p>
                   <p className="text-sm font-semibold text-[#1a0a05]">
                     ariunjargal.ochirpurev@gmail.com
                   </p>
