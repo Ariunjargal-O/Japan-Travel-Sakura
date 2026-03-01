@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import { Send, Phone, Mail } from "lucide-react";
 import emailjs from "@emailjs/browser";
 
@@ -10,10 +10,6 @@ export function RegisterSection() {
   const [error, setError] = useState("");
   const formRef = useRef<HTMLFormElement>(null);
 
-  useEffect(() => {
-    emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "");
-  }, []);
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -21,13 +17,14 @@ export function RegisterSection() {
 
     try {
       await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
+        "service_bgrkysy",
+        "sak-travel1",
         formRef.current!,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "", 
+        "bSpzquXzX4SGtOIkp"
       );
       setSubmitted(true);
     } catch (err) {
+      console.error(err);
       setError("Илгээхэд алдаа гарлаа. Дахин оролдоно уу.");
     } finally {
       setLoading(false);
@@ -51,7 +48,6 @@ export function RegisterSection() {
         </div>
 
         <div className="grid gap-10 md:grid-cols-5">
-          {/* Form */}
           <div className="md:col-span-3">
             {submitted ? (
               <div className="flex flex-col items-center justify-center rounded-2xl border border-[#2ecc71]/20 bg-[#2ecc71]/5 p-12 text-center">
@@ -77,7 +73,7 @@ export function RegisterSection() {
                     </label>
                     <input
                       id="name"
-                      name="from_name" /* ← EmailJS template-тэй таарах нэр */
+                      name="from_name"
                       type="text"
                       required
                       className="w-full rounded-xl border border-[#1a0a05]/10 bg-white px-4 py-3 text-sm text-[#1a0a05] outline-none transition-all focus:border-[#f0a050] focus:ring-2 focus:ring-[#f0a050]/20"
@@ -179,15 +175,9 @@ export function RegisterSection() {
                 </div>
                 <div>
                   <p className="text-xs font-medium text-[#1a0a05]/50">Утас</p>
-                  <p className="text-sm font-semibold text-[#1a0a05]">
-                    +976 9811-1230
-                  </p>
-                  <p className="text-sm font-semibold text-[#1a0a05]">
-                    +976 7211-9871
-                  </p>
-                  <p className="text-sm font-semibold text-[#1a0a05]">
-                    +081 070-2166-8821
-                  </p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">+976 9811-1230</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">+976 7211-9871</p>
+                  <p className="text-sm font-semibold text-[#1a0a05]">+081 070-2166-8821</p>
                 </div>
               </div>
 
@@ -196,25 +186,12 @@ export function RegisterSection() {
                   <Mail className="h-4 w-4 text-[#2ecc71]" />
                 </div>
                 <div>
-                  <p className="text-xs font-medium text-[#1a0a05]/50">
-                    И-мэйл
-                  </p>
+                  <p className="text-xs font-medium text-[#1a0a05]/50">И-мэйл</p>
                   <p className="text-sm font-semibold text-[#1a0a05]">
                     ariunjargal.ochirpurev@gmail.com
                   </p>
                 </div>
               </div>
-
-              {/* <div className="flex items-start gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f0a050]/10">
-                  <MapPin className="h-4 w-4 text-[#f0a050]" />
-                </div>
-                <div>
-                  <p className="text-xs font-medium text-[#1a0a05]/50">Хаяг</p>
-                  <p className="text-sm font-semibold text-[#1a0a05]">Улаанбаатар хот</p>
-                  <p className="text-xs text-[#1a0a05]/50">Сүхбаатар дүүрэг</p>
-                </div>
-              </div> */}
 
               <div className="h-px bg-[#1a0a05]/5" />
 
@@ -224,7 +201,6 @@ export function RegisterSection() {
               </p>
             </div>
           </div>
-          {/* ... */}
         </div>
       </div>
     </section>
