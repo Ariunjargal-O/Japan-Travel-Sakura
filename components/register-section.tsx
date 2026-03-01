@@ -9,10 +9,6 @@ export function RegisterSection() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const formRef = useRef<HTMLFormElement>(null);
-  const EMAILJS_SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!;
-  const EMAILJS_TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!;
-  const EMAILJS_PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!;
-
 
   useEffect(() => {
     emailjs.init(process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "");
@@ -28,6 +24,7 @@ export function RegisterSection() {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
         formRef.current!,
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "", 
       );
       setSubmitted(true);
     } catch (err) {
